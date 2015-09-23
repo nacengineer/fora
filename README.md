@@ -1,8 +1,14 @@
 # Fora
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fora`. To experiment with that code, run `bin/console` for an interactive prompt.
+*Why "fora"?* Its kind of the phoenetic pronunciation of the ancient greek
+word for time, [φορά](https://en.wiktionary.org/wiki/%CF%86%CE%BF%CF%81%CE%AC)
 
-TODO: Delete this and the text above, and describe your gem
+*Uses?* simple transform of Time/Dates <-> String
+
+**Dependencies**:
+- ruby > 2.1
+- contracts gem > 0.12.0
+- rspec
 
 ## Installation
 
