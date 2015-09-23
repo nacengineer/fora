@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just include these methods in your class
+
+```ruby
+class MyAwesomeClass
+  include Fora
+
+  ...
+end
+```
 
 ## Development
 
