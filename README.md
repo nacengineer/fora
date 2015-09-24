@@ -10,6 +10,15 @@ word for time, [φορά](https://en.wiktionary.org/wiki/%CF%86%CE%BF%CF%81%CE%A
 - contracts gem > 0.12.0
 - rspec
 
+*Goals:* Create ruby only methods that can be mixed into a class for
+transforming strings to time or dates to strings. A lot of these methods
+exist natively in ActiveSupport. This class isn't trying to imitate
+those methods but instead is geared towards a quick well guarded, by
+contracts, way of transforming back and forth.
+
+Mostly this is a demo of the Contracts gem, but I also use these methods
+in my classes so I figured I'd just create a quick gem out of them.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -37,12 +46,6 @@ class MyAwesomeClass
   ...
 end
 ```
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
