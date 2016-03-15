@@ -11,13 +11,13 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Add some time manipulation to your ruby}
   spec.description   = %q{Simple classes to work with dates and times}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/nacengineer/fora"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
@@ -31,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake",    "~> 10.0",  ">= 10.0"
   spec.add_development_dependency "rspec",   "~> 3.1.0", ">= 3.1.0"
 
-  spec.add_dependency "contracts", "~> 0.12.0", ">= 0.12.0"
+  spec.add_dependency "contracts", "~> 0.13.0", ">= 0.12.0"
 end
