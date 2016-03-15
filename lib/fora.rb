@@ -19,7 +19,7 @@ module Fora
   end
 
   # Not the most robust regex, just a quick check
-  Contract C::And[String, /\A[0-1][0-9]\/[0-3][0-9]\/[1-2][0-9]{3}/] \
+  Contract C::And[String, /\A[0-1]?[0-9]{1}\/+[0-3]?[0-9]{1}\/[1-2][0-9]{3}/] \
            => Date
   def parse_us_date(date)
     Date.strptime(date, "%m/%d/%Y")
