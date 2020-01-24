@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nacengineer@gmail.com"]
 
   spec.summary       = %q{Add some time manipulation to your ruby}
-  spec.description   = %q{Simple classes to work with dates and times}
+  spec.description   = %q{Simple classes to work wxith dates and times}
   spec.homepage      = "https://github.com/nacengineer/fora"
   spec.license       = "MIT"
 
