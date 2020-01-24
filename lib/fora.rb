@@ -1,6 +1,7 @@
-require "fora/version"
-require "contracts"
-require "date"
+require 'fora/version'
+require 'contracts'
+require 'date'
+require 'time'
 
 module Fora
   include ::Contracts
@@ -35,7 +36,7 @@ module Fora
     if zone == "UTC"
       DateTime.strptime(t, opts).to_time.utc # perfer time object return
     else
-      DateTime.strptime(t, opts).to_time
+      DateTime.strptime(t, opts).to_time.local_time
     end
   end
 

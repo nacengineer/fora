@@ -31,22 +31,22 @@ describe Fora do
   it {expect(object.send :time_format, local_time).to eq local_time_str}
 
 
-  it "Fora#parse_us_time works w/ time zone (as local time)" do
-    expect(object.send(:parse_us_time, local_time_str, "CST").mon).to eq local_time.mon
-    expect(object.send(:parse_us_time, local_time_str, "CST").day).to eq local_time.day
-    expect(object.send(:parse_us_time, local_time_str, "CST").year).to eq local_time.year
-    expect(object.send(:parse_us_time, local_time_str, "CST").hour).to eq local_time.hour
-    expect(object.send(:parse_us_time, local_time_str, "CST").min).to eq local_time.min
-    expect(object.send(:parse_us_time, local_time_str, "CST").zone).to eq local_time.zone
+  context "Fora#parse_us_time works w/ time zone (as local time)" do
+    it { expect(subject.send(:parse_us_time, local_time_str, "CST").mon).to eq local_time.mon }
+    it { expect(subject.send(:parse_us_time, local_time_str, "CST").day).to eq local_time.day }
+    it { expect(subject.send(:parse_us_time, local_time_str, "CST").year).to eq local_time.year }
+    it { expect(subject.send(:parse_us_time, local_time_str, "CST").hour).to eq local_time.hour }
+    it { expect(subject.send(:parse_us_time, local_time_str, "CST").min).to eq local_time.min }
+    it { expect(subject.send(:parse_us_time, local_time_str, "CST").zone).to eq local_time.zone }
   end
 
-  it "Fora#parse_us_time works (as UTC)" do
-    expect(object.send(:parse_us_time, utc_time_str).mon).to eq utc_time.mon
-    expect(object.send(:parse_us_time, utc_time_str).day).to eq utc_time.day
-    expect(object.send(:parse_us_time, utc_time_str).year).to eq utc_time.year
-    expect(object.send(:parse_us_time, utc_time_str).hour).to eq utc_time.hour
-    expect(object.send(:parse_us_time, utc_time_str).min).to eq utc_time.min
-    expect(object.send(:parse_us_time, utc_time_str).zone).to eq utc_time.zone
+  context "Fora#parse_us_time works (as UTC)" do
+    it { expect(object.send(:parse_us_time, utc_time_str).mon).to eq utc_time.mon }
+    it { expect(object.send(:parse_us_time, utc_time_str).day).to eq utc_time.day }
+    it { expect(object.send(:parse_us_time, utc_time_str).year).to eq utc_time.year }
+    it { expect(object.send(:parse_us_time, utc_time_str).hour).to eq utc_time.hour }
+    it { expect(object.send(:parse_us_time, utc_time_str).min).to eq utc_time.min }
+    it { expect(object.send(:parse_us_time, utc_time_str).zone).to eq utc_time.zone }
   end
 
   it {expect {object.send :parse_us_time, bad_time_str}.to raise_error}
